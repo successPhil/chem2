@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Grid2, Typography } from '@mui/material';
 
+
 function Chapter11() {
   return (
     <div>
@@ -94,6 +95,30 @@ function Chapter11() {
           </Grid2>
         </Grid2>
         <br/>
+
+        <Typography variant="h3" sx={{ textAlign: 'center' }}>
+        Trends in strength (intermolecular) attractions
+      </Typography>
+      <Box sx={{ mt: 2, textAlign: 'left', width: '100%', maxWidth: 600, mx: 'auto' }}>
+        <ul style={{ paddingLeft: '20px', margin: 0 }}>
+          <li>
+            <Typography variant='body2'>
+              The <strong>stronger</strong> the attraction between atoms or molecules, the <span style={{color: 'red'}}>more energy</span> it will take to separate them
+            </Typography>
+          </li>
+          <li>
+            <Typography variant='body2'>
+              Boiling a liquid requires adding enough energy to <span style={{color: 'red'}}>overcome all the attractions</span> between particles (not the covalent bonds or intramolecular forces)
+            </Typography>
+          </li>
+          <li>
+            <Typography variant='body2'>
+              The <span style={{color: 'red'}}>higher</span> the normal <i>boiling point</i> of a liquid, the <strong>stronger</strong> the intermolecular attractive forces
+            </Typography>
+          </li>
+        </ul>
+      </Box>
+
         <Typography variant="h3" sx={{ textAlign: 'center' }}>
         Why are other molecules attracted to each other?
       </Typography>
@@ -139,16 +164,20 @@ function Chapter11() {
         Types of Intermolecular Attractive Forces 
       </Typography>
       <Typography variant='body2' sx={{textAlign: 'center'}}>
-      (weakest to strongest)
+      (<i>weakest</i> to <strong>strongest</strong>)
       </Typography>
       <br/>
       <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Typography variant="body1" sx={{ textAlign: 'center' }}>
         <strong>Dispersion Forces</strong>- Temporary polarity in the molecules due to unequal electron distribution
       </Typography>
+      <br/>
+      <Typography variant='body2'><i>aka</i> London forces or van der Waals forces</Typography>
+      <br/>
       <Typography variant='body2'>
         <strong>present in all molecules and atoms</strong>
       </Typography>
+      <br/>
       <Typography variant='body2'>
         When a temporary dipole occurs, it induces a dipole in all the surrounding molecules
       </Typography>
@@ -166,6 +195,11 @@ function Chapter11() {
         Effect of molecular size on dispersion force 
       </Typography>
       <br />
+      <img
+                src="/images/mm-dispersion.png"
+                alt="Changes between States"
+                style={{ maxWidth: '90%', height: 'auto' }} // Resize while maintaining aspect ratio
+              />
 
       <Typography variant='body1' sx={{textAlign: 'center'}}>
         As molar mass increases, the <strong>number of electrrons</strong> increases
@@ -182,11 +216,111 @@ function Chapter11() {
                   </li>
                   <li>
                     <Typography variant="body2">
-                      Stronger attractive forces between molecules <strong>increases</strong> the boiling point
+                      <strong>Stronger</strong> attractive forces between molecules <strong style={{color: 'red'}}>increases</strong> the boiling point
                     </Typography>
                   </li>
                 </ul>
-        </Box>
+      </Box>
+      <Typography variant='h3'>
+        Effect of molecular shape on dispersion force
+      </Typography>
+      <br/>
+      <img
+        src="/images/shape-dispersion.png"
+        alt="Changes between States"
+        style={{ maxWidth: '90%', height: 'auto' }} // Resize while maintaining aspect ratio
+      />
+      <Box sx={{ mt: 2, textAlign: 'left', width: '100%', maxWidth: 600, mx: 'auto' }}>
+      <ul>
+        <li>
+          <Typography variant='body2'>
+            Larger surface area = <strong>stronger</strong> dispersion forces
+          </Typography>
+        </li>
+        <li>
+          <Typography variant='body2'>
+            Elongated or flat shape = greater area of interaction
+          </Typography>
+        </li>
+        <li>
+          <Typography variant='body2'>
+            Compact or spherical shapes = reduced interaction area = <i>weaker</i> dispersion forces
+          </Typography>
+        </li>
+      </ul>
+      </Box>
+
+      <Typography variant='h3'>
+        Dipole-Dipole attractions (interactions between polar molecules) 
+      </Typography>
+
+      <Typography variant='body1'>
+        Polar molecules have a <strong>permanent</strong> dipole
+      </Typography>
+
+      <Box sx={{ mt: 2, textAlign: 'left', width: '100%', maxWidth: 600, mx: 'auto' }}>
+      <ul>
+      <li>
+        <Typography variant='body2'>
+          Bond polarity and shape determine a substances polarity
+        </Typography>
+      </li>
+      <li>
+        <Typography variant='body2'>
+        Positive end of one dipole attracts the negative end of another.
+        </Typography>
+      </li>
+      <li>
+        <Typography variant='body2'>
+        Stronger dipoles → stronger dipole-dipole interactions.
+        </Typography>
+      </li>
+      <li>
+        <Typography variant='body2'>
+        Alignment of dipoles increases attraction strength.
+        </Typography>
+      </li>
+      <li>
+        <Typography variant='body2'>
+        Higher boiling points compared to nonpolar molecules of similar size due to stronger intermolecular attractions
+        </Typography>
+      </li>
+      </ul>
+      </Box>
+
+      <Typography variant='h3'>
+        Hydrogen bonding: dipole-dipole
+      </Typography>
+      <br/>
+
+      <Typography variant='body1'>
+        When a very <strong>electronegative</strong> atom (<i>N</i>,<i>O</i>,<i>F</i>) is bonded to <span style={{color: 'red'}}>hydrogen</span> it strongly pulls the bonding electrons towards it
+      </Typography>
+
+      <Box sx={{ mt: 2, textAlign: 'left', width: '100%', maxWidth: 600, mx: 'auto' }}>
+        <ul>
+          <li>
+            <Typography variant='body1'>
+              Since hydrogen has no other electrons, when its electron is pulled the nucleus becomes deshielded (proton exposed)
+            </Typography>
+          </li>
+          <li>
+            <Typography variant='body1'>
+            The exposed proton acts as a very strong center of positive charge, attracting all the electron clouds from neighboring molecules.
+            </Typography>
+          </li>
+          <li>
+            <Typography variant='body1'>
+            Hydrogen bonds are very strong intermolecular attractive forces. (stronger than dipole-dipole and dispersion forces)
+            </Typography>
+          </li>
+          <li>
+            <Typography variant='body1'>
+            Substances that can form hydrogen bonds will have higher boiling points and melting points than similar substances that cannot
+            </Typography>
+          </li>
+        </ul>
+      </Box>
 
 
       </div>

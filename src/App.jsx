@@ -27,6 +27,7 @@ const theme = createTheme({
     text: {
       primary: '#000000', // Black text for readability
     },
+
   },
   typography: {
     // h3 for the main header
@@ -146,6 +147,7 @@ function App() {
                 width: 240,
                 boxSizing: 'border-box',
                 backgroundColor: theme.palette.primary.main, // Use theme's primary color for Drawer
+                color: theme.palette.secondary.main
               },
             }}
             variant="temporary"
